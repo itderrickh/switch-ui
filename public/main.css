@@ -1,0 +1,171 @@
+body {
+    background-color: #2E2E2E;
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.profile-icon {
+    background-image: url(./images/profile-icon.png);
+    width: 60px;
+    height: 60px;
+    background-size: 360px 1140px;
+    background-position: -300px -660px;
+    background-repeat: no-repeat;
+    border: 4px solid gray;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.menu-container {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 100px;
+    height: 100px;
+    border: 4px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+    background-color: gray;
+}
+
+.material-icons.material-menu-icons {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+.twb-area {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icon {
+    vertical-align: bottom;
+}
+
+#game-cart-text {
+    color: #4DA3C4;
+    font-size: xx-large;
+}
+
+.scroll-container {
+    width: auto;
+    padding-left: 100px;
+    width: 5300px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.scroll-container .items {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 4px solid transparent;
+    margin: 2px;
+    border-radius: 2px;
+    background-color: black;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.button-container {
+    text-align: right;
+    border-top: 1px solid white;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+}
+
+.button-container .items {
+    display: inline-block;
+}
+
+.menu-icon:hover,
+.profile-icon:hover,
+.scroll-container .items:hover,
+.hover {
+    border: 4px solid white;
+    animation-name: border-color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.hover-left {
+    animation-name: jump-left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.hover-right {
+    animation-name: jump-right;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.hover-down {
+    animation-name: jump-bottom;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.hover-up {
+    animation-name: jump-top;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes jump-left {
+    0% { border-left: 4px solid white !important; border-right: 4px solid white !important; }
+    50% { border-left: 10px solid white !important; border-right: 0px solid white !important; }
+    100% { border-left: 4px solid white !important; border-right: 4px solid white !important; }
+}
+
+@keyframes jump-right {
+    0% { border-left: 4px solid white !important; border-right: 4px solid white !important; }
+    50% { border-left: 0px solid white !important; border-right: 10px solid white !important; }
+    100% { border-left: 4px solid white !important; border-right: 4px solid white !important; }
+}
+
+@keyframes jump-top {
+    0% { border-top: 4px solid white !important; border-bottom: 4px solid white !important; }
+    50% { border-top: 10px solid white !important; border-bottom: 0px solid white !important; }
+    100% { border-top: 4px solid white !important; border-bottom: 4px solid white !important; }
+}
+
+@keyframes jump-bottom {
+    0% { border-top: 4px solid white !important; border-bottom: 4px solid white !important; }
+    50% { border-top: 0px solid white !important; border-bottom: 10px solid white !important; }
+    100% { border-top: 4px solid white !important; border-bottom: 4px solid white !important; }
+}
+
+@keyframes border-color {
+    0%   {border-color: white;}
+    50%  {border-color: #4DA3C4;}
+    100%  {border-color: white;}
+}
+
+.color-red { color: #AA0000;}
+.color-yellow { color: #AAAA00; }
+.color-green { color: #00AA00; }
+.color-blue { color: #0000AA; }
+.color-white { color: #FFFFFF; }
